@@ -12,6 +12,16 @@ module.exports = {
         clean: true
     },
 
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                type: "javascript/auto"
+            }
+        ]
+    },
+
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html"

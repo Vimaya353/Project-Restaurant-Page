@@ -1,1 +1,3 @@
-console.log("Hello from Restaurant Page!");
+import loadHomepage from "./homepage.js";
+
+loadHomepage();
