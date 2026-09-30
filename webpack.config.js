@@ -18,6 +18,10 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 type: "javascript/auto"
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"]
             }
         ]
     },

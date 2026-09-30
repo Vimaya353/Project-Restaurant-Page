@@ -1,3 +1,5 @@
+import "./style.css";
+
 import loadHomepage from "./homepage.js";
 import loadMenu from "./menu.js";
 import loadContact from "./contact.js";
