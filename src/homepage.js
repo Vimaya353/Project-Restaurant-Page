@@ -1,8 +1,14 @@
+import restaurantImage from "./images/restaurant_img_1.jpg";
+
 function loadHomepage() {
     const content = document.querySelector("#content");
 
     const heading = document.createElement("h1");
     heading.textContent = "The Grand Table";
+
+    const image = document.createElement("img");
+    image.src = restaurantImage;
+    image.alt = "Inside the Grand Table Restaurant ";
 
     const welcomeMessage = document.createElement("h2");
     welcomeMessage.textContent = "Welcome to The Grand Table";
@@ -23,6 +29,7 @@ function loadHomepage() {
         "Monday - Sunday: 10:00 AM - 10:00 PM";
 
     content.appendChild(heading);
+    content.appendChild(image);
     content.appendChild(welcomeMessage);
     content.appendChild(description);
     content.appendChild(restaurantInfo);
