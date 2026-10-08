@@ -16,17 +16,17 @@ function clearContent() {
 
 loadHomepage();
 
-homeButton.addEventListener("click",()=> {
+homeButton.addEventListener("click", () => {
     clearContent();
     loadHomepage();
 });
 
-menuButton.addEventListener("click", ()=> {
+menuButton.addEventListener("click", () => {
     clearContent();
     loadMenu();
 });
 
-contactButton.addEvenetListener("click", ()=> {
+contactButton.addEventListener("click", () => {
     clearContent();
     loadContact();
 });

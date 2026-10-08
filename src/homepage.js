@@ -4,17 +4,30 @@ function loadHomepage() {
     const heading = document.createElement("h1");
     heading.textContent = "The Grand Table";
 
-    const welcomeMessage = document.createElement("p");
-    welcomeMessage.textContent =
-        "Welcome to The Grand Table! Enjoy delicious food made with fresh ingredients.";
+    const welcomeMessage = document.createElement("h2");
+    welcomeMessage.textContent = "Welcome to The Grand Table";
 
     const description = document.createElement("p");
     description.textContent =
-        "Our restaurant is the perfect place to enjoy great food and wonderful moments.";
+        "Enjoy delicious food made with fresh ingredients in a warm and comfortable atmosphere.";
+
+    const restaurantInfo = document.createElement("p");
+    restaurantInfo.textContent =
+        "Whether you are joining us for lunch, dinner, or a special occasion, we are happy to serve you.";
+
+    const openingHours = document.createElement("h2");
+    openingHours.textContent = "Opening Hours";
+
+    const hours = document.createElement("p");
+    hours.textContent =
+        "Monday - Sunday: 10:00 AM - 10:00 PM";
 
     content.appendChild(heading);
     content.appendChild(welcomeMessage);
     content.appendChild(description);
+    content.appendChild(restaurantInfo);
+    content.appendChild(openingHours);
+    content.appendChild(hours);
 }
 
 export default loadHomepage;

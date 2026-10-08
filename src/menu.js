@@ -1,36 +1,49 @@
 function loadMenu() {
-
     const content = document.querySelector("#content");
 
     const heading = document.createElement("h1");
     heading.textContent = "Our Menu";
 
-    const item1 = document.createElement("div");
+    const burger = document.createElement("div");
 
-    const item1Name =  document.createElement("h2");
-    item1Name.textContent = "Classic Burger";
+    const burgerName = document.createElement("h2");
+    burgerName.textContent = "Classic Burger - Rs. 1,200";
 
-    const item1Description = document.createElement("p");
-    item1Description.textContent = "Juicy beef burger with fresh vegetables and our special sauce.";
+    const burgerDescription = document.createElement("p");
+    burgerDescription.textContent =
+        "Juicy beef burger served with fresh vegetables, cheese, and our special sauce.";
 
-    item1.appendChild(item1Name);
-    item1.appendChild(item1Description);
+    burger.appendChild(burgerName);
+    burger.appendChild(burgerDescription);
 
-    const item2 = document.createElement("div");
+    const pasta = document.createElement("div");
 
-    const item2Name = document.createElement("h2");
-    item2Name.textContent = "Creamy Pasta";
+    const pastaName = document.createElement("h2");
+    pastaName.textContent = "Creamy Pasta - Rs. 1,500";
 
-    const item2Description = document.createElement("p");
-    item2Description.textContent = "Delicious pasta served with a rich and creamy sauce.";
+    const pastaDescription = document.createElement("p");
+    pastaDescription.textContent =
+        "Fresh pasta served with a rich and creamy sauce and seasonal vegetables.";
 
-    item2.appendChild(item2Name);
-    item2.appendChild(item2Description);
+    pasta.appendChild(pastaName);
+    pasta.appendChild(pastaDescription);
+
+    const pizza = document.createElement("div");
+
+    const pizzaName = document.createElement("h2");
+    pizzaName.textContent = "Garden Pizza - Rs. 1,800";
+
+    const pizzaDescription = document.createElement("p");
+    pizzaDescription.textContent =
+        "Crispy pizza topped with fresh vegetables, mozzarella cheese, and herbs.";
+
+    pizza.appendChild(pizzaName);
+    pizza.appendChild(pizzaDescription);
 
     content.appendChild(heading);
-    content.appendChild(item1);
-    content.appendChild(item2);
-
+    content.appendChild(burger);
+    content.appendChild(pasta);
+    content.appendChild(pizza);
 }
 
 export default loadMenu;
